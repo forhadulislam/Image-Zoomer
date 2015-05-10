@@ -1,0 +1,22 @@
+.uy-header-fixed {
+	width:100%;
+	position:fixed;
+	right:0;
+	left:0;
+	top:0;
+	z-index:100;
+}
+
+.uy-sidebar-fixed{
+	position:fixed;
+	z-index:101;
+}
+
+.uy-footer-fixed {
+	width:100%;
+	position:fixed;
+	right:0;
+	left:0;
+	bottom:0;
+	z-index:100;
+}

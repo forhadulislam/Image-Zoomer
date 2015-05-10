@@ -1,0 +1,57 @@
+
+@accordion-label-bg-color: #D95B43;
+@accordion-color: #542437;
+@accordion-label-text-shadow: 0.1em 0.1em 0.1em rgba(255,255,255,0.3);
+@accordion-label-hover-text-shadow: 0.1em 0.1em 0.1em rgba(0,0,0,0.5);
+
+@accordion-h3-color: @accordion-color;
+
+@checkbox-checked-border-color: #D24125;
+
+
+.uy-accordion-default {
+	border:	0.1em solid @accordion-color;
+	border-radius: 0.250em;
+    background:	@white;
+    
+    label {
+        display:block;
+        font-size:0.875em;
+        line-height:0.875em;
+        background: @accordion-label-bg-color;
+        border: 0.1em solid @accordion-color;
+        color:@accordion-color;
+        .text-shadow(@accordion-label-text-shadow);
+        font-weight:700;
+        cursor:pointer;
+        letter-spacing: 0.1em;
+        text-transform:uppercase;
+    }
+    
+    ul li label:hover, [type=checkbox]:checked ~ label {
+        background: @checkbox-checked-border-color;
+        color:@white;
+        .text-shadow(@accordion-label-hover-text-shadow);
+    }
+    
+    .uy-content {
+        padding:0 0.625em;
+        overflow:hidden;
+        border: 0.1em solid @white;
+    }
+    
+    p {
+        color: @gray-dark;
+        line-height: 1.125em;
+    }
+    
+    h3 {
+        color:@accordion-h3-color;
+        padding:0;
+        margin:0.625em 0;
+    }    
+}
+
+[type=checkbox]:checked ~ .uy-content {
+    border: 0.1em solid @checkbox-checked-border-color;
+}

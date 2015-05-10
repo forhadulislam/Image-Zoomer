@@ -1,0 +1,26 @@
+// variables
+
+@widget-default-bg:           @white;
+@widget-header-border-color:  darken(@orange-theme, 18.5%);
+@widget-footer-bg:            #e9eaed;
+
+// main less
+
+.uy-widget-default{
+  background:@widget-default-bg;
+  .uy-widget-header{
+    background:#2c2c2c;
+    color: @white;
+    font-size: 15px;
+    font-weight:300;
+    letter-spacing: 0.016em;
+    margin-top: 1em;
+  }
+  .uy-widget-body{
+    padding:0 20px;
+  }
+  .uy-widget-footer{
+    background: @widget-footer-bg;
+    text-transform: capitalize;
+  }
+} 

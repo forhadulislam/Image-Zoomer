@@ -1,0 +1,70 @@
+
+
+@alert-body-default-border-color: #666666;
+@alert-body-default-gradient-start-color: #f6f2ec;
+@alert-body-default-gradient-end-color: #e2dbce;
+@alert-body-default-box-shadow: 0 0 0.125em rgba(0, 0, 0, 0.35), 0 5.313em 50.625em -4.250em #fff, 0 0.750em 0.500em -0.313em rgba(0, 0, 0, 0.65);
+
+
+.alert-body-default {
+	font-size: 0.875em;
+	color: @gray-dark;
+	border: 0.250em solid @alert-body-default-border-color;
+    .gradient(@alert-body-default-gradient-start-color, @alert-body-default-gradient-end-color);	
+    .box-shadow(@alert-body-default-box-shadow);
+    position: fixed;
+    background: #fafafa;
+    top: 110%;
+    left: 30%;
+    max-width: 450px;
+    border-radius: 3px;
+    button{
+		font-size: 1em;
+		min-width: 100px;
+    }
+}
+
+.alert-header h4 {
+    color: rgba(6, 6, 6, 0.45);
+}
+
+.alert-header h4.title {
+    color: #666;
+    font-size: 2em;
+    font-weight: 100;
+    border-bottom: 1px solid #666;
+}
+
+.alert-content-default {
+	font-size: 0.90em;
+	color: @black;
+}
+
+.alert-content .message {
+	font-size: 1.1em;
+	font-weight: 300;
+}
+
+
+// .cancel-circle {
+	// font-family:Tahoma;
+	// font-size: 1em;
+	// font-weight: bold;
+	// color: @white;
+	// background-color: rgba(218, 127, 117, 1);
+	// text-align: center;
+    // .border-radius(3.125em);
+//     
+    // &:hover {
+        // color: rgba(6, 6, 6, 0.45);
+        // cursor: pointer;
+    // }    
+// }
+
+.loader-default {
+	text-indent: -1.8em;
+    .animation (load4, 1.3s, infinite, linear);
+  	width: 1em;
+  	font-size: 0.9em;
+   	border-radius: 50%;
+}

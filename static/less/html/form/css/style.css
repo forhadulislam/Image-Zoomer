@@ -1,0 +1,150 @@
+/*
+ * Basic Style
+ */
+/*legend {
+  font-size: 21px;
+  line-height: inherit;
+  color: #333;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+label {
+  font-weight: bold;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  line-height: normal;
+}
+select[multiple],
+select[size] {
+  height: auto;
+}
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+output {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+}*/
+.uy-form input[type="color"],
+.uy-form input[type="date"],
+.uy-form input[type="datetime"],
+.uy-form input[type="datetime-local"],
+.uy-form input[type="email"],
+.uy-form input[type="month"],
+.uy-form input[type="password"],
+.uy-form input[type="number"],
+.uy-form input[type="range"],
+.uy-form input[type="search"],
+.uy-form input[type="tel"],
+.uy-form input[type="text"],
+.uy-form input[type="time"],
+.uy-form input[type="url"],
+.uy-form input[type="week"],
+.uy-form textarea, .uy-form select{
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+.uy-form input[type="color"]:focus,
+.uy-form input[type="date"]:focus,
+.uy-form input[type="datetime"]:focus,
+.uy-form input[type="datetime-local"]:focus,
+.uy-form input[type="email"]:focus,
+.uy-form input[type="month"]:focus,
+.uy-form input[type="password"]:focus,
+.uy-form input[type="number"]:focus,
+.uy-form input[type="range"]:focus,
+.uy-form input[type="search"]:focus,
+.uy-form input[type="tel"]:focus,
+.uy-form input[type="text"]:focus,
+.uy-form input[type="time"]:focus,
+.uy-form input[type="url"]:focus,
+.uy-form input[type="week"]:focus,
+.uy-form textarea:focus, 
+.uy-form select:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+.uy-form::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+.uy-form:-ms-input-placeholder {
+  color: #999;
+}
+.uy-form::-webkit-input-placeholder {
+  color: #999;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type="date"],
+  input[type="time"],
+  input[type="datetime-local"],
+  input[type="month"] {
+    line-height: 34px;
+  }
+}
+.disabled input,
+.disabled select,
+.disabled textarea {
+  cursor: not-allowed;
+  background-color: #eee !important;
+  opacity: 1;
+}
+/*
+ * In different State
+ */
+.uy-form-success.uy-form input,
+.uy-form-success.uy-form textarea,
+.uy-form-success.uy-form select {
+  border-color: #3c763d;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+.uy-form-success.uy-form input:focus,
+.uy-form-success.uy-form textarea:focus,
+.uy-form-success.uy-form select:focus {
+  border-color: #2b542c;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
+}
+.uy-form-warning.uy-form input,
+.uy-form-warning.uy-form textarea,
+.uy-form-warning.uy-form select {
+  border-color: #8a6d3b;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+.uy-form-warning.uy-form input:focus,
+.uy-form-warning.uy-form textarea:focus,
+.uy-form-warning.uy-form select:focus {
+  border-color: #66512c;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #c0a16b;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #c0a16b;
+}
+.uy-form-error.uy-form input,
+.uy-form-error.uy-form textarea,
+.uy-form-error.uy-form select {
+  border-color: #a94442;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+.uy-form-error.uy-form input:focus,
+.uy-form-error.uy-form textarea:focus,
+.uy-form-error.uy-form select:focus {
+  border-color: #843534;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+}

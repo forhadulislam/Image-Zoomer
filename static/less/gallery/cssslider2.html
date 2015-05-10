@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>css slider 2</title>
+		<link rel="stylesheet/less" type="text/css" href="style.less">
+		<script type="text/javascript" src="less.min.js"></script>
+	</head>
+	<body>
+
+		<ul class="slides">
+
+			<li>
+				<input type="radio" name="radio-btn" id="img-1" checked />
+				<div class="slide-container">
+					<div class="slide">
+						<img src="http://farm9.staticflickr.com/8072/8346734966_f9cd7d0941_z.jpg" />
+						<div class="slide-info">
+							<header>Header</header>
+							<p>
+								lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor
+								lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor
+							</p>
+						</div>
+					</div>
+					<div class="nav">
+						<label for="img-3" class="prev">&#x2039;</label>
+						<label for="img-2" class="next">&#x203a;</label>
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<input type="radio" name="radio-btn" id="img-2" />
+				<div class="slide-container">
+					<div class="slide">
+						<img src="http://farm9.staticflickr.com/8504/8365873811_d32571df3d_z.jpg" />
+					</div>
+					<div class="nav">
+						<label for="img-1" class="prev">&#x2039;</label>
+						<label for="img-3" class="next">&#x203a;</label>
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<input type="radio" name="radio-btn" id="img-3" />
+				<div class="slide-container">
+					<div class="slide">
+						<img src="http://farm9.staticflickr.com/8068/8250438572_d1a5917072_z.jpg" />
+					</div>
+					<div class="nav">
+						<label for="img-2" class="prev">&#x2039;</label>
+						<label for="img-1" class="next">&#x203a;</label>
+					</div>
+				</div>
+			</li>
+
+			<li class="nav-dots">
+				<label for="img-1" class="nav-dot" id="img-dot-1"></label>
+				<label for="img-2" class="nav-dot" id="img-dot-2"></label>
+				<label for="img-3" class="nav-dot" id="img-dot-3"></label>
+			</li>
+
+		</ul>
+
+	</body>
+</html>

@@ -1,0 +1,30 @@
+@import "config";
+@import "structure";
+// variables
+
+@fixed-header-default-bg:             #f8f8f8;
+@fixed-sidebar-default-border-color:  #e8e8e8;
+@fixed-footer-default-bg:             @orange-theme;
+@fixed-footer-default-color:          lighten(@orange-theme, 35%);
+
+// main less
+
+.uy-header-fixed-default{
+  background-color: @fixed-header-default-bg;
+}
+
+.uy-sidebar-fixed-default{
+    border-color: @fixed-sidebar-default-border-color;
+    border-image: none;
+    .border-radiuses (0.250em, 0.375em, 0.375em, 0.250em);
+    border-style: solid;
+    border-width: 0.063em 0.063em 0.250em;
+    height: auto;
+    padding: 0.938em;
+    margin-top:6.25em;
+}
+
+.uy-footer-fixed-default {
+  background-color: @orange-theme;
+  color: @fixed-footer-default-color;
+}

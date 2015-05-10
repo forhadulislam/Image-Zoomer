@@ -1,0 +1,67 @@
+/* 
+    Variable Declaration
+*/
+@nav-ul-width: 100%;
+
+@nav-ul-a-padding-top-bottom: 0.375em;
+@nav-ul-a-padding-right-left: 1.875em;
+
+@nav-ul-ul-a-padding-top-bottom: 0.625em;
+@nav-ul-ul-a-padding-right-left: 1.250em;
+
+@nav-ul-a-img-width: 0.938em;
+@nav-ul-a-img-height: 0.938em;
+
+.uy-nav-horizontal{
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        float:left;
+        width: @nav-ul-width;
+        list-style:none;
+        
+        a{
+            display: block;
+            text-align: center;
+            padding: @nav-ul-a-padding-top-bottom @nav-ul-a-padding-right-left;
+            
+            img{
+                .size(@nav-ul-a-img-width, @nav-ul-a-img-height);
+            }
+        }
+
+        li {
+            position:relative;
+            float:left;
+            margin:0;
+            padding:0;
+        }
+
+        ul{
+            display:none;
+            position:absolute;
+            top:100%;
+            left:0;
+            padding:0;
+            
+            li{
+                float:none;
+            }
+
+            a{
+                padding: @nav-ul-ul-a-padding-top-bottom @nav-ul-ul-a-padding-right-left;
+            }
+
+            ul{
+                top:0;
+                left:100%;
+            }
+        }        
+
+        li:hover > ul{
+            display:block;
+        }               
+        
+    }    
+}

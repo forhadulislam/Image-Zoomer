@@ -1,0 +1,30 @@
+.uy-accordion {
+    padding:0.625em;
+    margin:0 auto;
+    ul{
+		list-style:none;
+		margin:0;
+		padding:0;
+		li{
+			overflow:hidden;
+			label{
+				padding:0.625em;
+			}
+			.uy-content {
+			    height:0;
+			    border-top:0;
+			}
+		}    
+    }
+   [type=radio]{
+    display:none;
+   } 
+   [type=radio]:checked ~ .uy-content {
+    	height:auto;
+	}
+}
+
+.uy-operator{
+	float:right;
+}
+   

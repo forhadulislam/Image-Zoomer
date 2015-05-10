@@ -1,0 +1,231 @@
+/**********************
+       Main CSS
+***********************/
+
+.a{
+  text-decoration: none;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: @headings-font-family;
+  font-weight: @headings-font-weight;
+  line-height: @headings-line-height;
+  color: @headings-color;
+
+  .small {
+    font-weight: normal;
+    line-height: 1;
+    color: @headings-small-color;
+  }
+}
+
+.h1, .h2, .h3 {
+  margin-top: @heading-margin-top;
+  margin-bottom: @heading-margin-bottom;
+
+  .small {
+    font-size: 65%;
+  }
+}
+
+.h4, .h5, .h6 {
+  margin-top: @heading-margin-top;
+  margin-bottom: @heading-margin-bottom;
+
+  .small {
+    font-size: 75%;
+  }
+}
+
+.h1{
+  font-size: @font-size-h1;
+  @media (max-width: 767px) {
+    font-size: @font-size-h1*0.75;
+  }
+  @media (max-width: 480px) {
+    font-size: @font-size-h1*0.6;
+  }
+}
+
+.h2{
+  font-size: @font-size-h2;
+  @media (max-width: 767px) {
+    font-size: @font-size-h2*0.75;
+  }
+  @media (max-width: 480px) {
+    font-size: @font-size-h2*0.6;
+  }
+}
+
+.h3{
+  font-size: @font-size-h3;
+  @media (max-width: 767px) {
+    font-size: @font-size-h3*0.75;
+  }
+  @media (max-width: 480px) {
+    font-size: @font-size-h3*0.6;
+  }
+}
+
+.h4{
+  font-size: @font-size-h4;
+  @media (max-width: 767px) {
+    font-size: @font-size-h4*0.75;
+  }
+  @media (max-width: 480px) {
+    font-size: @font-size-h4*0.6;
+  }
+}
+
+.h5{
+  font-size: @font-size-h5;
+  @media (max-width: 767px) {
+    font-size: @font-size-h5*0.75;
+  }
+  @media (max-width: 480px) {
+    font-size: @font-size-h5*0.6;
+  }
+}
+
+.h6{
+  font-size: @font-size-h6;
+  @media (max-width: 767px) {
+    font-size: @font-size-h6*0.75;
+  }
+  @media (max-width: 480px) {
+    font-size: @font-size-h6*0.6;
+  }
+}
+
+.p {
+  margin: 0 0 @paragraph-margin;
+}
+
+.lead {
+  margin-bottom: @line-height-computed;
+  font-size: floor((@font-size-base * 1.15));
+  font-weight: 300;
+  line-height: 1.4;
+
+  @media (min-width: 767px) {
+    font-size: (@font-size-base * 1.5);
+  }
+}
+
+.small {
+  font-size: floor((100% * @font-size-small / @font-size-base));
+}
+
+.mark {
+  background-color: @state-warning-bg;
+  padding: 0.2em;
+}
+
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }
+.text-nowrap         { white-space: nowrap; }
+.text-lowercase      { text-transform: lowercase; }
+.text-uppercase      { text-transform: uppercase; }
+.text-capitalize     { text-transform: capitalize; }
+
+.text-muted {
+  color: @text-muted;
+}
+.text-primary {
+  .text-emphasis-variant(@primary-color);
+}
+.text-success {
+  .text-emphasis-variant(@state-success-text);
+}
+.text-info {
+  .text-emphasis-variant(@state-info-text);
+}
+.text-warning {
+  .text-emphasis-variant(@state-warning-text);
+}
+.text-danger {
+  .text-emphasis-variant(@state-danger-text);
+}
+
+.bg-primary {
+  color: @white;
+  .bg-variant(@primary-color);
+}
+.bg-success {
+  .bg-variant(@state-success-bg);
+}
+.bg-info {
+  .bg-variant(@state-info-bg);
+}
+.bg-warning {
+  .bg-variant(@state-warning-bg);
+}
+.bg-danger {
+  .bg-variant(@state-danger-bg);
+}
+
+.page-header {
+  background: @page-header-background;
+  color: @page-header-color;
+  font-size: @page-header-font-size;
+  padding: @page-header-padding/2 @page-header-padding;
+  margin: @page-header-margin 0 @page-header-margin;
+  border-bottom: @page-border-bottom solid @page-header-border-color;
+}
+
+.abbr[title], .abbr[data-original-title] {
+  cursor: help;
+  border-bottom: @abbr-border-bottom dotted @abbr-border-color;
+}
+
+.blockquote {
+  padding: (@line-height-computed / 2) @line-height-computed;
+  margin: 0 0 @line-height-computed;
+  font-size: @blockquote-font-size;
+  border-left: @blockquote-border-left solid @blockquote-border-color;
+
+  .p,
+  .ul,
+  .ol {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .footer,
+  .small {
+    display: block;
+    font-size: 80%;
+    line-height: @line-height-base;
+    color: @blockquote-small-color;
+
+    &:before {
+      content: '\2014 \00A0'; // em dash, nbsp
+    }
+  }
+}
+
+.blockquote-reverse,
+.blockquote.float-right {
+  padding-right: @blockquote-padding-right;
+  padding-left: 0;
+  border-right: @blockquote-border-left solid @blockquote-border-color;
+  border-left: 0;
+  text-align: right;
+
+  .footer,
+  .small {
+    &:before { content: ''; }
+    &:after {
+      content: '\00A0 \2014'; // nbsp, em dash
+    }
+  }
+}
+
+.address {
+  margin-bottom: @line-height-computed;
+  font-style: normal;
+  line-height: @line-height-base;
+}

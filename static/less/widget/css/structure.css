@@ -1,0 +1,16 @@
+.uy-widget{
+    height: auto;
+    width: 100%;
+}
+
+.uy-widget-header {
+    padding: 10px 0 10px 10px;
+}
+
+.uy-widget-body{
+	padding: 20px 0 20px 10px;
+}
+
+.uy-widget-footer{
+	padding: 10px 0 10px 10px;
+}

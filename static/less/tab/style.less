@@ -1,0 +1,53 @@
+
+// variables
+
+@transition-string:'all 0.2s ease-in-out';
+@normal: normal;
+@tabs-default-label-font-color: #08C;
+@tabs-default-checked-label-bg:#7A991A;
+
+// start mixins
+
+.background-mixin(@red,@green,@blue,@opacity,@position){
+	 background: rgba(@red,@green,@blue,@opacity);
+	 top: @position;
+}
+.tab-animate-duration{
+	 -webkit-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+
+// end mixins
+
+.uy-tabs-default {
+	label {
+		.border-radius (2px 2px 0 0);
+	    color: @tabs-default-label-font-color;
+	    font-size: 1.500em;
+	    font-weight: @normal;
+	     .background-mixin(255,255,255,0.2,0.188em);
+	   .transition(~"@{transition-string}");
+	   &:hover {
+	   		.background-mixin(255,255,255,0.5,0);
+		}
+	}
+	[id^=tab]:checked + label {
+	  background: @tabs-default-checked-label-bg;
+	  color: @white;
+	  top: 0;
+	}
+	.tab-content{
+	  text-align: left;
+	  font-size: 1.250em;
+	  line-height: 140%;
+	  background: @tabs-default-checked-label-bg;
+	  color: @white;
+	  top: 2.4em;
+	 .tab-animate-duration;
+	}
+	
+}
+ 
+  

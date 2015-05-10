@@ -1,0 +1,50 @@
+
+/*
+*   Variable Declarations
+*
+*/
+
+@nav-horizontal-transition: "background-color 0.5s ease";
+
+@theme-a-ul-bgcolor: #418bca;
+@theme-a-li-hover-active-bgcolor: darken(@theme-a-ul-bgcolor, 15%);
+
+
+.theme-a{
+    ul{
+        a{
+            font-weight: bold;
+            color: @white;
+            text-decoration: none;
+        }
+
+        ul{
+            a{                
+                line-height:120%;
+            }
+        }
+        
+    }
+}
+
+.uy-nav-horizontal{
+    
+    &.theme-a {
+        ul {
+            background-color: @theme-a-ul-bgcolor;
+            font-family: @font-family-serif;        
+        }
+        
+        li{
+            .transition(~"@{nav-horizontal-transition}");
+        }
+        
+        li:hover, 
+        li:active{
+            background-color: @theme-a-li-hover-active-bgcolor;            
+        }
+    }
+}
+
+
+

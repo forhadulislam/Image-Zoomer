@@ -1,0 +1,40 @@
+@accordion-font: Arial, Helvetica, sans-serif;
+
+.uy-accordion {
+    padding:0.625em;
+    margin:0 auto;
+    font-family: @accordion-font;
+    font-size:0.9em;
+    
+    ul {
+        list-style:none;
+        margin:0;
+        padding:0;
+        
+        li {
+            overflow:hidden;
+
+            label {
+                padding: 0.85em;
+            }
+
+            .uy-content {
+                height:0;
+                border-top:0;
+            }
+        }
+    }
+    
+    [type=checkbox] {
+        display:none;
+        
+        &:checked ~ .uy-content {
+            height:auto;
+        }
+        
+    }
+}
+
+.uy-operator{
+	float:right;
+}

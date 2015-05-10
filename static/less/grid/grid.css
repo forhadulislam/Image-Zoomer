@@ -1,0 +1,181 @@
+body{
+	margin: 0;
+}
+.wrapper{
+	margin : 0 auto;
+	padding: 0;
+	width: 90%;
+}
+
+.wrapper-full{
+	margin : 0 auto;
+	padding: 0;
+	width: 100%;
+}
+
+.wrapper-fixed{
+  position: fixed;
+}
+
+.row {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col-12,
+.col-11,
+.col-10,
+.col-9,
+.col-8,
+.col-7,
+.col-6,
+.col-5,
+.col-4,
+.col-3,
+.col-2,
+.col-1{
+	display: block;
+	float:left;
+	margin: 0 0 0 1%;
+}
+.col-12:first-child,
+.col-11:first-child,
+.col-10:first-child,
+.col-9:first-child,
+.col-8:first-child,
+.col-7:first-child,
+.col-6:first-child,
+.col-5:first-child,
+.col-4:first-child,
+.col-3:first-child,
+.col-2:first-child,
+.col-1:first-child{
+	margin-left: 0;
+}
+
+
+/*  GROUPING  */
+.row:before,
+.row:after { content:""; display:table; }
+.row:after { clear:both;}
+.row { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF TWELVE  */
+.col-12 {
+	width: 100%;
+}
+
+.col-11 {
+  	width: 91.58%;
+}
+.col-10 {
+  	width: 83.16%;
+}
+
+
+.col-9 {
+  	width: 74.75%;
+}
+
+.col-8 {
+  	width: 66.33%;
+}
+
+.col-7 {
+  	width: 57.91%;
+}
+
+.col-6 {
+  	width: 49.5%;
+}
+
+.col-5 {
+  	width: 41.08%;
+}
+
+.col-4 {
+  	/* width: 32.66%; Not working */
+    width: 32.66%;
+}
+
+.col-3 {
+  	width: 24.25%;
+}
+
+.col-2 {
+  	width: 15.83%;
+}
+
+.col-1 {
+  	width: 7.416%;
+}
+
+/*  OFFSETS  */
+
+.col-offset-11{
+    margin-left: 92.58%;
+}
+.col-offset-10{
+    margin-left: 84.16%;
+}
+.col-offset-9{
+    margin-left: 75.75%;
+}
+.col-offset-8{
+    margin-left: 67.33%;
+}
+.col-offset-7{
+    margin-left: 58.91%;
+}
+.col-offset-6{
+    margin-left: 50.5%;
+}
+.col-offset-5{
+    margin-left: 42.08%;
+}
+.col-offset-4{
+    margin-left: 33.66%;
+}
+.col-offset-3{
+    margin-left: 25.25% !important;
+}
+.col-offset-2{
+    margin-left: 16.83% !important;
+}
+.col-offset-1{
+    margin-left: 8.416%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col-offset-1,
+	.col-offset-2,
+	.col-offset-3,
+	.col-offset-4,
+	.col-offset-5,
+	.col-offset-6,
+	.col-offset-7,
+	.col-offset-8,
+	.col-offset-9,
+	.col-offset-10,
+	.col-offset-11,
+	.col-offset-12 {  
+		margin-left:0; 
+	}
+    .col-1,
+    .col-2, 
+    .col-3, 
+    .col-4, 
+    .col-5, 
+    .col-6, 
+    .col-7, 
+    .col-8, 
+    .col-9, 
+    .col-10, 
+    .col-11, 
+    .col-12 {
+		width: 100%; 
+	}
+}

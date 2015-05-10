@@ -1,0 +1,137 @@
+/************
+ *Login Page*
+ ************/
+
+.uy-login-box {
+	box-shadow: 0 0 1px 1px rgba(0, 0, 0, /*0.1*/0.5);
+	background-color:#FFFFFF;
+	text-align: center;
+}
+
+.uy-login-box h2, .uy-login-box button{
+	text-transform: uppercase;
+	text-align:center;
+}
+
+.uy-login-box button{
+	font-size: 1em;
+	font-weight: bold;
+	-webkit-box-shadow:1px 1px 0px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow:1px 1px 0px rgba(0, 0, 0, 0.3);
+	-ms-box-shadow:1px 1px 0px rgba(0, 0, 0, 0.3);
+    box-shadow:1px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+.log-in-part{
+	border-bottom:1px solid #d7d8da;
+	padding-bottom: 25px;
+}
+
+.log-in-part h2{
+	border-bottom: 1px solid #e5e5e5;
+	padding-bottom: 20px;
+	padding-top: 10px;
+	font-size: 2em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+.log-in-part button{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 195px;
+}
+
+.log-in-part button:first-of-type{
+	margin-right: 15px;
+}
+
+.log-in-part input{
+	margin-top: 10px;
+	border-color: #EEEEEE !important;
+	-webkit-box-shadow:0px 1px 1px rgba(0, 0, 0, 0.4) inset !important;
+	-moz-box-shadow:0px 1px 1px rgba(0, 0, 0, 0.4) inset !important;
+	-ms-box-shadow:0px 1px 1px rgba(0, 0, 0, 0.4) inset !important;
+    box-shadow:0px 1px 1px rgba(0, 0, 0, 0.4) inset !important;
+}
+
+.log-in-part a{
+	color: #555;
+	font-size: 12px;
+}
+
+.log-in-part a:hover{
+	color: #222222;
+	text-decoration: underline;
+}
+
+.register-part{
+	border-top:1px solid #ffffff;
+}
+
+.register-part .uy-button-default{
+	width: 250px;
+	margin: 0 80px 15px;
+	background: #313131; 
+	background: -moz-linear-gradient(top,  #313131 0%, #101010 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#313131), color-stop(100%,#101010)); 
+	background: -webkit-linear-gradient(top,  #313131 0%,#101010 100%); 
+	background: -o-linear-gradient(top,  #313131 0%,#101010 100%); 
+	background: -ms-linear-gradient(top,  #313131 0%,#101010 100%); 
+	background: linear-gradient(to bottom,  #313131 0%,#101010 100%);
+	color:#fff;
+	border: 0 none;
+}
+
+.register-part .uy-button-default:hover{
+	background: #313131;
+	background: -moz-linear-gradient(top,  #313131 0%, #252525 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#313131), color-stop(100%,#252525));
+	background: -webkit-linear-gradient(top,  #313131 0%,#252525 100%); 
+	background: -o-linear-gradient(top,  #313131 0%,#252525 100%); 
+	background: -ms-linear-gradient(top,  #313131 0%,#252525 100%); 
+	background: linear-gradient(to bottom,  #313131 0%,#252525 100%);
+}
+
+.log-in-part button {
+    width: 175px;
+}
+
+.register-part .uy-button-default {
+	margin: 0 58px 15px;
+}
+
+.log-in-part label{
+	margin-bottom:0;
+	font-size: 0.85em;
+	text-transform:capitalize;
+	font-weight: bold;
+}
+
+.log-in-part input{
+	margin-top: 5px;
+	margin-bottom: 15px;
+	border: 1px solid #ddd !important;
+	-webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4) inset, 0 1px 0 0 rgba(255, 255, 255, 0) inset, 0 -1px 0 0 rgba(0, 0, 0, 0.15) inset !important;
+	-moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4) inset, 0 1px 0 0 rgba(255, 255, 255, 0) inset, 0 -1px 0 0 rgba(0, 0, 0, 0.15) inset !important;
+	-ms-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4) inset, 0 1px 0 0 rgba(255, 255, 255, 0) inset, 0 -1px 0 0 rgba(0, 0, 0, 0.15) inset !important;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4) inset, 0 1px 0 0 rgba(255, 255, 255, 0) inset, 0 -1px 0 0 rgba(0, 0, 0, 0.15) inset !important;
+}
+
+.register-part h2{
+	font-size: 2em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+.login-box-shadow{
+	background-image: url(../image/shadow.png);
+	background-repeat: no-repeat;
+    background-size: contain;
+	height: 50px;
+    margin: 0 auto;
+    position: relative;
+    top: -15px;
+    width: 445px;
+    z-index: -1;
+}

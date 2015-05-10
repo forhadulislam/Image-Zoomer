@@ -1,0 +1,55 @@
+// variables
+
+@left:left;
+
+
+// start mixins
+.display-mixin(@type){
+	display: @type;
+}
+.position-mixin(@type){
+	position: @type;
+}
+.float(@type){
+	float: @type;
+}
+.tabs-input-radio(@top,@left){
+	 top: -@top;
+    left: -@left;
+}
+// end mixins
+
+[id^=tab]:checked ~ [id^=tab-content] {
+    .display-mixin(block);
+}
+
+.uy-tabs {
+  .float(none);
+  list-style: none;
+  .position-mixin(relative);
+  padding: 0;
+  input[type=radio] {
+	    .position-mixin(absolute);
+	    .tabs-input-radio(624.938em,624.938em);
+	}
+	li{
+  		.float(left);
+	}
+	label {
+	     .display-mixin(block);
+	     .position-mixin(relative);
+	    padding: 0.5em 1.250em;
+	    cursor: pointer;
+	}
+}
+ 
+
+.tab-content{
+  z-index: 2;
+   .display-mixin(none);
+  width: 100%;
+  .position-mixin(absolute);
+ .box-sizing (border-box);
+  padding: 0.938em;
+  left: 0;
+}

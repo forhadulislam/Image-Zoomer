@@ -1,0 +1,50 @@
+@pagination-transition: all 0.1s linear 0s, letter-spacing 0s linear 0s;
+
+@pagination-li-a-border-color: #ddd;
+@pagination-hover-focus-bg-color: #F4F4F4;
+
+
+.uy-pagination-default{
+  
+	  border-radius: @border-radius-default;
+    
+    > li {
+      
+      > a {
+        color: @orange-theme;
+        text-decoration: none;
+        background-color: @white;
+        border: 0.1em solid @pagination-li-a-border-color;
+        line-height: 1.5;
+        .transition(@pagination-transition);
+      }
+      
+      &:first-child > a,
+      &:first-child > span {
+         margin-left: 0;
+         border-top-left-radius: 0.250em;
+         border-bottom-left-radius: 0.250em;
+      }
+      
+      &:last-child > a,
+      &:last-child > span {
+         border-top-right-radius: 0.250em;
+         border-bottom-right-radius: 0.250em;
+      }
+      
+      > a:hover,
+      > span:hover,
+      > a:focus,
+      > span:focus {
+         background-color: @pagination-hover-focus-bg-color;
+      }
+      
+    }
+
+    .active a{
+        background-color: @orange-theme;
+        color: @white;
+        border: 0.1em solid @orange-theme;
+        pointer-events: none;
+    }
+}

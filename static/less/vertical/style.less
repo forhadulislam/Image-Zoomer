@@ -1,0 +1,95 @@
+/*
+*   Variable declaration
+*/
+
+@nav-vertical-font: Verdana, Geneva, Arial, Helvetica, sans-serif;
+@nav-vertical-ul-bg-color: #373737;
+@list-bottom-border: #444444;
+@nav-vertical-ul-li-color: #236077;
+@nav-vertical-ul-li-hover-active-bg-color: #575757;
+
+@nav-li-transition: background-color 0.5s ease;
+@nav-li-hover-transition: background-color 0.7s ease;
+
+.uy-nav-vertical {
+
+    ul {
+        list-style:none;
+        font-family: @nav-vertical-font;
+        font-size: 1em;
+        background-color: @nav-vertical-ul-bg-color;
+
+        li {
+
+           border-bottom: 1px solid @list-bottom-border;
+            a {
+                font-size:1em;
+                text-decoration: none;
+                color: inherit;
+                i{
+                    padding-right:10px;
+                }
+            }
+
+            span {
+                line-height: 1.938em;
+            }
+
+            p {
+                padding: 0;
+                margin: 0;
+            }
+
+        }
+    }
+
+    li {
+        .transition (@nav-li-transition);
+
+        &:hover, &:active, &.active {
+            background-color: @nav-vertical-ul-li-hover-active-bg-color;
+        }
+
+        &:hover ul {
+            .transition (@nav-li-hover-transition);
+        }
+    }
+
+}
+
+.nav-mobile-default {
+    font-size:0.9em;
+
+    ul {
+        list-style:none;
+        font-weight: bold;
+        color: @white;
+
+        li {
+            line-height:1.5;
+            .transition(~"@{nav-horizontal-transition}");
+
+            a{
+                color:@white;
+                text-decoration:none;
+                font-weight: normal;
+            }
+
+            label {
+                font-size:1.2em;
+            }
+
+            .uy-content {
+                border: none !important;
+                background-color: @nav-vertical-ul-li-hover-active-bg-color;
+                li{
+                    border-bottom: 1px solid @list-bottom-border;
+                }
+            }
+
+            .uy-operator{
+                font-size:0.8em;
+            }
+        }
+    }
+}

@@ -1,0 +1,333 @@
+/*Button Size*/
+
+.uy-button-2x{
+  font-size: 18px;
+  line-height: 1.33;
+}
+.uy-button-3x{
+  font-size: 22px;
+  line-height: 1.5;
+}
+.uy-button-4x{
+  font-size: 26px;
+  line-height: 1.7;
+}
+
+/*Default Button*/
+
+.uy-button-default {
+  font-weight: normal;
+  line-height: 1.5;
+  border: 1px solid transparent;
+  color: @primary-text-color;
+  background-color: @primary-color;
+  border-color: #ccc;
+}
+.uy-button-default:hover,
+.uy-button-default:focus,
+.uy-button-default.focus,
+.uy-button-default:active,
+.uy-button-default.active{
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.uy-button-default:active,
+.uy-button-default.active{
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.uy-button-default.disabled,
+.uy-button-default[disabled],
+fieldset[disabled] .uy-button-default,
+.uy-button-default.disabled:hover,
+.uy-button-default[disabled]:hover,
+fieldset[disabled] .uy-button-default:hover,
+.uy-button-default.disabled:focus,
+.uy-button-default[disabled]:focus,
+fieldset[disabled] .uy-button-default:focus,
+.uy-button-default.disabled.focus,
+.uy-button-default[disabled].focus,
+fieldset[disabled] .uy-button-default.focus,
+.uy-button-default.disabled:active,
+.uy-button-default[disabled]:active,
+fieldset[disabled] .uy-button-default:active,
+.uy-button-default.disabled.active,
+.uy-button-default[disabled].active,
+fieldset[disabled] .uy-button-default.active {
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+/*Primary Button*/
+
+.uy-button-theme-primary {
+  font-weight: normal;
+  line-height: 1.5;
+  border: 1px solid transparent;
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+.uy-button-theme-primary:hover,
+.uy-button-theme-primary:focus,
+.uy-button-theme-primary.focus,
+.uy-button-theme-primary:active,
+.uy-button-theme-primary.active {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+.uy-button-theme-primary:active,
+.uy-button-theme-primary.active {
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.uy-button-theme-primary.disabled,
+.uy-button-theme-primary[disabled],
+fieldset[disabled] .uy-button-theme-primary,
+.uy-button-theme-primary.disabled:hover,
+.uy-button-theme-primary[disabled]:hover,
+fieldset[disabled] .uy-button-theme-primary:hover,
+.uy-button-theme-primary.disabled:focus,
+.uy-button-theme-primary[disabled]:focus,
+fieldset[disabled] .uy-button-theme-primary:focus,
+.uy-button-theme-primary.disabled.focus,
+.uy-button-theme-primary[disabled].focus,
+fieldset[disabled] .uy-button-theme-primary.focus,
+.uy-button-theme-primary.disabled:active,
+.uy-button-theme-primary[disabled]:active,
+fieldset[disabled] .uy-button-theme-primary:active,
+.uy-button-theme-primary.disabled.active,
+.uy-button-theme-primary[disabled].active,
+fieldset[disabled] .uy-button-theme-primary.active {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+
+/*success Button*/
+
+.uy-button-theme-success {
+  font-weight: normal;
+  line-height: 1.5;
+  border: 1px solid transparent;
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.uy-button-theme-success:hover,
+.uy-button-theme-success:focus,
+.uy-button-theme-success.focus,
+.uy-button-theme-success:active,
+.uy-button-theme-success.active {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+.uy-button-theme-success:active,
+.uy-button-theme-success.active {
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.uy-button-theme-success.disabled,
+.uy-button-theme-success[disabled],
+fieldset[disabled] .uy-button-theme-success,
+.uy-button-theme-success.disabled:hover,
+.uy-button-theme-success[disabled]:hover,
+fieldset[disabled] .uy-button-theme-success:hover,
+.uy-button-theme-success.disabled:focus,
+.uy-button-theme-success[disabled]:focus,
+fieldset[disabled] .uy-button-theme-success:focus,
+.uy-button-theme-success.disabled.focus,
+.uy-button-theme-success[disabled].focus,
+fieldset[disabled] .uy-button-theme-success.focus,
+.uy-button-theme-success.disabled:active,
+.uy-button-theme-success[disabled]:active,
+fieldset[disabled] .uy-button-theme-success:active,
+.uy-button-theme-success.disabled.active,
+.uy-button-theme-success[disabled].active,
+fieldset[disabled] .uy-button-theme-success.active {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+/* Inof Button */
+
+.uy-button-theme-info {
+  font-weight: normal;
+  line-height: 1.5;
+  border: 1px solid transparent;
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+.uy-button-theme-info:hover,
+.uy-button-theme-info:focus,
+.uy-button-theme-info.focus,
+.uy-button-theme-info:active,
+.uy-button-theme-info.active {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+.uy-button-theme-info:active,
+.uy-button-theme-info.active{
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.uy-button-theme-info.disabled,
+.uy-button-theme-info[disabled],
+fieldset[disabled] .uy-button-theme-info,
+.uy-button-theme-info.disabled:hover,
+.uy-button-theme-info[disabled]:hover,
+fieldset[disabled] .uy-button-theme-info:hover,
+.uy-button-theme-info.disabled:focus,
+.uy-button-theme-info[disabled]:focus,
+fieldset[disabled] .uy-button-theme-info:focus,
+.uy-button-theme-info.disabled.focus,
+.uy-button-theme-info[disabled].focus,
+fieldset[disabled] .uy-button-theme-info.focus,
+.uy-button-theme-info.disabled:active,
+.uy-button-theme-info[disabled]:active,
+fieldset[disabled] .uy-button-theme-info:active,
+.uy-button-theme-info.disabled.active,
+.uy-button-theme-info[disabled].active,
+fieldset[disabled] .uy-button-theme-info.active {
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+
+/* Warning Button */
+
+.uy-button-theme-warning {
+  font-weight: normal;
+  line-height: 1.5;
+  border: 1px solid transparent;
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.uy-button-theme-warning:hover,
+.uy-button-theme-warning:focus,
+.uy-button-theme-warning.focus,
+.uy-button-theme-warning:active,
+.uy-button-theme-warning.active {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+.uy-button-theme-warning:active,
+.uy-button-theme-warning.active {
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.uy-button-theme-warning.disabled,
+.uy-button-theme-warning[disabled],
+fieldset[disabled] .uy-button-theme-warning,
+.uy-button-theme-warning.disabled:hover,
+.uy-button-theme-warning[disabled]:hover,
+fieldset[disabled] .uy-button-theme-warning:hover,
+.uy-button-theme-warning.disabled:focus,
+.uy-button-theme-warning[disabled]:focus,
+fieldset[disabled] .uy-button-theme-warning:focus,
+.uy-button-theme-warning.disabled.focus,
+.uy-button-theme-warning[disabled].focus,
+fieldset[disabled] .uy-button-theme-warning.focus,
+.uy-button-theme-warning.disabled:active,
+.uy-button-theme-warning[disabled]:active,
+fieldset[disabled] .uy-button-theme-warning:active,
+.uy-button-theme-warning.disabled.active,
+.uy-button-theme-warning[disabled].active,
+fieldset[disabled] .uy-button-theme-warning.active {
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+
+/* Danger Button */
+
+.uy-button-theme-danger {
+  font-weight: normal;
+  line-height: 1.5;
+  border: 1px solid transparent;
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.uy-button-theme-danger:hover,
+.uy-button-theme-danger:focus,
+.uy-button-theme-danger.focus,
+.uy-button-theme-danger:active,
+.uy-button-theme-danger.active {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+.uy-button-theme-danger:active,
+.uy-button-theme-danger.active {
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.uy-button-theme-danger.disabled,
+.uy-button-theme-danger[disabled],
+fieldset[disabled] .uy-button-theme-danger,
+.uy-button-theme-danger.disabled:hover,
+.uy-button-theme-danger[disabled]:hover,
+fieldset[disabled] .uy-button-theme-danger:hover,
+.uy-button-theme-danger.disabled:focus,
+.uy-button-theme-danger[disabled]:focus,
+fieldset[disabled] .uy-button-theme-danger:focus,
+.uy-button-theme-danger.disabled.focus,
+.uy-button-theme-danger[disabled].focus,
+fieldset[disabled] .uy-button-theme-danger.focus,
+.uy-button-theme-danger.disabled:active,
+.uy-button-theme-danger[disabled]:active,
+fieldset[disabled] .uy-button-theme-danger:active,
+.uy-button-theme-danger.disabled.active,
+.uy-button-theme-danger[disabled].active,
+fieldset[disabled] .uy-button-theme-danger.active {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+
+/* Inof Button */
+
+.uy-button-theme-link {
+  line-height: 1.5;
+  font-weight: normal;
+  color: #337ab7;
+  border-radius: 0;
+}
+.uy-button-theme-link,
+.uy-button-theme-link:active,
+.uy-button-theme-link.active,
+.uy-button-theme-link[disabled],
+fieldset[disabled] .uy-button-theme-link {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.uy-button-theme-link,
+.uy-button-theme-link:hover,
+.uy-button-theme-link:focus,
+.uy-button-theme-link:active {
+  border-color: transparent;
+}
+.uy-button-theme-link:hover,
+.uy-button-theme-link:focus {
+  color: #23527c;
+  text-decoration: underline;
+  background-color: transparent;
+}
+.uy-button-theme-link[disabled]:hover,
+fieldset[disabled] .uy-button-theme-link:hover,
+.uy-button-theme-link[disabled]:focus,
+fieldset[disabled] .uy-button-theme-link:focus {
+  color: #777;
+  text-decoration: none;
+}

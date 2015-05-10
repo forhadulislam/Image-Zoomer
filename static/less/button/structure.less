@@ -1,0 +1,88 @@
+/*Basic Button*/
+
+// variables
+@common-em:1em;
+
+// start mixins
+.text-decoration-mixin(@type) {
+  text-decoration: @type;
+}
+
+// end mixins
+
+.uy-button {
+  display: inline-block;
+  padding: 0.375em 0.750em;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  	&:focus,
+	&:active:focus,
+	&.active:focus,
+	&.focus,
+	&:active.focus,
+	&.active.focus {
+	  outline: thin dotted;
+	  outline: 5px auto -webkit-focus-ring-color;
+	  outline-offset: -0.125em;
+	}
+  @media only screen and (max-width: 480px){
+    padding: 0.25em 0.5em;
+  }
+}
+
+a.uy-button, a .uy-button,
+div.uy-button, div .uy-button{
+	.text-decoration-mixin(none);
+}
+
+.uy-button:focus,
+.uy-button:active:focus,
+.uy-button.active:focus,
+.uy-button.focus,
+.uy-button:active.focus,
+.uy-button.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -0.125em;
+}
+
+.uy-button.disabled, .uy-button[disabled],
+fieldset[disabled] .uy-button {
+  pointer-events: none;
+  cursor: not-allowed;
+  .opacity (65);
+}
+
+/*Button Size*/
+
+.uy-button-2x{
+  padding: 0.625em @common-em;
+}
+.uy-button-3x{
+  padding: 0.750em @common-em + 0.125em;
+}
+.uy-button-4x{
+  padding: 0.875em @common-em + 0.250em;
+} 
+
+/*Button Border Radious*/
+
+.uy-button-border-radius{
+  border-radius: 0.188em;
+}
+.uy-button-border-radius-2x{
+  border-radius: 0.313em;
+}
+.uy-button-border-radius-3x{
+  border-radius: 0.625em;
+}
+.uy-button-border-radius-4x{
+  border-radius: 0.938em;
+}
+.uy-button-border-radius-round{
+  border-radius: 62.500em;
+}

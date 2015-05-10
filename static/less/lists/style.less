@@ -1,0 +1,254 @@
+
+@list-success-color:			#3c763d;
+@list-success-bg-color: 		#dff0d8;
+@list-success-hover-bg-color: 	#d0e9c6;
+@list-info-color:				#31708f;
+@list-info-bg-color:			#d9edf7;
+@list-info-hover-bg-color:		#c4e3f3;
+@list-warning-color:			#8a6d3b;
+@list-warning-bg-color:			#fcf8e3;
+@list-warning-hover-bg-color:	#faf2cc;
+@list-danger-color:				#a94442;
+@list-danger-bg-color:			#f2dede;
+@list-danger-hover-bg-color:	#ebcccc;
+
+.list-group-success(){
+ 		color: @list-success-color;
+	 	background-color: @list-success-bg-color;
+ }
+ .list-group-success-hover(){
+ 		color: @list-success-color;
+	  	background-color: @list-success-hover-bg-color;
+ }
+ .list-group-success-active(){
+ 		color: @body-bg;
+ 		background-color: @list-success-color;
+	  	border-color: @list-success-color;
+ }
+ /*
+ * info state functions
+ */
+
+ .list-group-info(){
+ 		color: @list-info-color;
+	  	background-color: @list-info-bg-color;
+ }
+ .list-group-info-active(){
+ 		color: @body-bg;
+  		background-color: @list-info-color;
+  		border-color: @list-info-color;
+  		border-color: @body-bg;
+ }
+ .list-group-info-hover(){
+ 		color: @list-info-color;
+	 	background-color: @list-info-hover-bg-color;
+ }
+
+ /*
+ * warning state functions
+ */
+ .list-group-warning(){
+		color: @list-warning-color;
+	  	background-color: @list-warning-bg-color;
+ }
+ .list-group-warning-hover(){
+		color: @list-warning-color;
+  		background-color: @list-warning-hover-bg-color;
+ }
+
+.list-group-warning-active{
+		color: @body-bg;
+  		background-color: @list-warning-color;
+  		border-color: @list-warning-color;
+ 		border-color: @body-bg;
+}
+/*
+ * Danger State Functions
+ */
+ .list-group-danger(){
+ 		color: @list-danger-color;
+	  	background-color: @list-danger-bg-color;
+ }
+ .list-group-danger-hover(){
+ 		color: @list-danger-color;
+  		background-color: @list-danger-hover-bg-color;
+ }
+ .list-group-danger-active(){
+ 		color: @body-bg;
+	  	background-color: @list-danger-color;
+	  	border-color: @list-danger-color;
+ }
+/*
+ * Genarel Active
+ */
+ 
+.list-style-none, .list-inline {
+ 	list-style: none;
+}
+
+.list-group.active{
+	&> a, &> li{
+	  z-index: 2;
+	  color: @body-bg;
+	  background-color: @primary-color;
+	  border-color: @body-bg;
+	}
+}
+.dl{
+	& dt, & dd{
+	line-height: 1.5;
+	}
+	& dt{
+	font-weight: bold;
+	}
+}
+
+.dl-horizontal dt:after {
+	content:":";
+}
+.list-group{
+	
+	&> a, &>li{
+		background-color: @body-bg;
+	  	border: 0.063em solid @gray-lighter - #111;
+	  	color: @gray;
+	  	text-decoration: none;
+	}
+	
+}
+
+.list-group{
+	&>a:hover, &>a:focus{
+		color: @gray;
+	  	background-color: @gray-lighter;
+	}
+}
+
+.list-group.disabled{
+	&>a, &>li{
+		color: @gray-light;
+  		cursor: not-allowed;
+  		background-color: @gray-lighter;
+	}
+}
+
+/*
+ * Success state
+ */
+
+.list-group-success{
+	&>a, &>li{
+		.list-group-success();
+	}
+	&>a:hover, &>a:focus{
+		 .list-group-success-hover();
+	} 
+}
+
+a , li{
+	&.list-group-success{
+		.list-group-success();
+	}
+	
+	&>.list-group-info{
+	  .list-group-info();
+  	}
+ 	
+ 	&.list-group-warning{
+	 	.list-group-warning();
+ 	}
+ 	&.list-group-warning:hover, &.list-group-warning:focus{
+	 	 .list-group-warning-hover();
+ 	}
+ 	
+ 	&.list-group-danger{
+ 	 	.list-group-danger();
+ 	}
+}
+
+a{
+	&.list-group-success:hover, &.list-group-success:focus{
+		.list-group-success-hover();
+	}
+	
+	&.list-group-success.active, &.list-group-success.active:hover, &.list-group-success.active:hover {
+	 	.list-group-success-active();
+	}
+	
+	&.list-group-info:hover, &.list-group-info:focus{
+ 		.list-group-info-hover();
+ 	}
+ 	
+ 	&.list-group-info.active, &.list-group-info.active:hover, &.list-group-info.active:focus{
+	  .list-group-info-active();
+	}
+	
+	&.list-group-warning.active, &.list-group-warning.active:hover,&.list-group-warning.active:focus{
+ 		.list-group-warning-active();
+ 	}
+ 	
+ 	&.list-group-danger:hover, &.list-group-danger:focus {
+  		 .list-group-danger-hover()
+  	}
+  	&.list-group-danger.active,&>.list-group-danger.active:hover, &>.list-group-danger.active:focus{
+	 	.list-group-danger-active();
+  	}
+}
+ 
+.list-group-success.active{
+	&>a , &>a:hover, &>a:focus{
+		.list-group-success-active();
+	}
+}
+
+/*
+ * info state
+ */
+ .list-group-info{
+  &>a , &>li{
+	  .list-group-info();
+  }
+  &>a:hover, &>a:focus{
+   	.list-group-info-hover();
+  }
+ }
+
+.list-group-info.active{
+	&>a, &>a:hover,&>a:focus{
+		.list-group-info-active();
+	}
+}
+
+/*
+ * warning state
+ */
+ .list-group-warning{
+ 	&>a, &>li{
+	 	.list-group-warning();
+ 	}
+ 	&>a:hover,&>a:focus{
+ 		 .list-group-warning-hover();
+ 	}
+ }
+ 
+.list-group-warning.active{
+	.list-group-warning-active();
+}
+
+/*
+ * Danger State
+ */
+ .list-group-danger{
+ 	&>a, &>li{
+	 	.list-group-danger();
+ 	}
+ 	&>a:hover, &>a:focus {
+ 		 .list-group-danger-hover()
+ 	}
+ }
+ 
+.list-group-danger.active{
+	&>a,  &>a:hover, &>a:focus{
+		.list-group-danger-active();
+	}
+}

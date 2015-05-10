@@ -1,0 +1,74 @@
+table.uy-table{
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.uy-table{
+   width: 100%; 
+  	max-width: 100%;
+/*     overflow:auto; */
+    
+    td,
+    th{
+      padding: 0;
+    }
+    
+    caption {
+      padding-top: 0.500em;
+      padding-bottom: 0.500em;
+      text-align: left;
+    }
+    
+    th {
+      text-align: left;
+    }
+    
+    & > thead > tr > th,
+    & > tbody > tr > th,
+    & > tfoot > tr > th,
+    & > thead > tr > td,
+    & > tbody > tr > td,
+    & > tfoot > tr > td {
+      padding: 0.500em;
+      vertical-align: top;
+    }
+    
+    & > thead > tr > th {
+      vertical-align: bottom;
+    }
+    
+    & > caption + thead > tr:first-child > th,
+    & > colgroup + thead > tr:first-child > th,
+    & > thead:first-child > tr:first-child > th,
+    & > caption + thead > tr:first-child > td,
+    & > colgroup + thead > tr:first-child > td,
+    & > thead:first-child > tr:first-child > td {
+      border-top: 0;
+    }
+    
+}
+
+.uy-table-condensed{
+    & > thead > tr > th,
+    & > tbody > tr > th,
+    & > tfoot > tr > th,
+    & > thead > tr > td,
+    & > tbody > tr > td,
+    & > tfoot > tr > td {
+      padding: 0.313em;
+    }
+}
+
+
+
+table.uy-table col[class*="col-"] {
+  position: static;
+  display: table-column;
+  float: none;
+}
+table.uy-table td[class*="col-"],
+table.uy-table th[class*="col-"] {
+  position: static;
+  display: table-cell;
+  float: none;
+}

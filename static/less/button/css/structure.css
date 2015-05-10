@@ -1,0 +1,72 @@
+/*Basic Button*/
+
+.uy-button {
+  display: inline-block;
+  padding: 6px 12px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+a.uy-button, a .uy-button,
+div.uy-button, div .uy-button{
+	text-decoration: none;
+}
+
+.uy-button:focus,
+.uy-button:active:focus,
+.uy-button.active:focus,
+.uy-button.focus,
+.uy-button:active.focus,
+.uy-button.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.uy-button.disabled, .uy-button[disabled],
+fieldset[disabled] .uy-button {
+  pointer-events: none;
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  opacity: .65;
+}
+
+/*Button Size*/
+
+.uy-button-2x{
+  padding: 10px 16px;
+}
+.uy-button-3x{
+  padding: 12px 18px;
+}
+.uy-button-4x{
+  padding: 14px 20px;
+}
+
+/*Button Border Radious*/
+
+.uy-button-border-radius{
+  border-radius: 3px;
+}
+.uy-button-border-radius-2x{
+  border-radius: 5px;
+}
+.uy-button-border-radius-3x{
+  border-radius: 10px;
+}
+.uy-button-border-radius-4x{
+  border-radius: 15px;
+}
+.uy-button-border-radius-round{
+  border-radius: 1000px;
+}
+
+@media only screen and (max-width: 480px){
+	.uy-button{
+		padding: 0.25em 0.5em;
+	}
+}

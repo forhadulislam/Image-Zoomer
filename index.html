@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="galleryApp">
+    <head>
+        <meta charset="utf-8">
+        <title>Image Gallery</title>
+        
+        <script src="/image-gallery/static/js/angular.min.js"></script>
+        <script src="/image-gallery/static/js/jquery.min.js"></script>
+        <link rel="stylesheet/less" type="text/css" href="/image-gallery/static/less/load.less">
+        <script src="/image-gallery/static/js/less.min.js"></script>
+        <script src="/image-gallery/static/js/gallery.js"></script>
+    </head>
+    <body ng-controller="GalleryController">
+        
+        <div class="gallery col-5">
+            <div class="main-image"> 
+                <img ng-mousemove="zoomImage($event)" class="img-responsive" id="display-image" src="/image-gallery/static/images/1.jpg" />
+                <div id="zoom-focus" ng-mouseleave="hideImage()"></div>
+            </div>
+            
+            <div id="zoomer"> <img id="image-zoom" class="img-responsive" src="" /> </div>
+            
+            <div class="all-images">
+                <div class="col-1" id="left" ng-click="scrollLeft($event)"> < </div>
+                
+                <div class="col-10" id="image-cont">
+                    <ul>
+                        <li class="col-2"><img ng-click="selectImage($event)" data-index='1' src="/image-gallery/static/images/1.jpg" /></li>
+                        <li class="col-2"><img ng-click="selectImage($event)" data-index='2' src="/image-gallery/static/images/2.jpg" /></li>
+                        <li class="col-2"><img ng-click="selectImage($event)" data-index='3' src="/image-gallery/static/images/3.jpg" /></li>
+                        <li class="col-2"><img ng-click="selectImage($event)" data-index='4' src="/image-gallery/static/images/4.jpg" /></li>
+                        <li class="col-2"><img ng-click="selectImage($event)" data-index='5' src="/image-gallery/static/images/5.jpg" /></li>
+                        <li class="col-2"><img ng-click="selectImage($event)" data-index='6' src="/image-gallery/static/images/6.jpg" /></li>
+                        <li class="col-2"><img ng-click="selectImage($event)" data-index='7' src="/image-gallery/static/images/7.jpg" /></li>
+                        <li class="col-2"><img ng-click="selectImage($event)" data-index='8' src="/image-gallery/static/images/8.jpg" /></li>
+                        <li class="col-2"><img ng-click="selectImage($event)" data-index='9' src="/image-gallery/static/images/9.jpg" /></li>
+                    </ul>
+                </div>
+                    
+                <div class="col-1" id="right" ng-click="scrollRight($event)"> > </div>
+            </div>        
+        </div>
+        
+    </body>
+</html> 

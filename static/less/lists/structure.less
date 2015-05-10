@@ -1,0 +1,78 @@
+.list ul ul,
+.list ol ul,
+.list ul ol,
+.list ol ol {
+  margin-bottom: 0;
+}
+/*
+ * List Style
+ */
+.list-style-none {
+  padding-left: 0;
+}
+.list-inline {
+  padding-left: 0;
+  margin-left: -@padding-default-vertical;
+  &> li {
+	  display: inline-block;
+	  padding-right: @padding-default-vertical;
+	  padding-left: @padding-default-vertical;	
+  }
+}
+
+/*
+ * Description List Style
+ */
+.dl{
+  margin-top: 0;
+  margin-bottom: 1.250em;
+  & dd{
+   		margin-left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+	.dl-horizontal{
+		&>dt{
+			float: left;
+		    width: 10.000em;
+		    overflow: hidden;
+		    clear: left;
+		    text-align: left;
+		    text-overflow: ellipsis;
+		    white-space: nowrap;
+		    content: ":";
+		}
+		&>dd{
+			margin-left: 11.250em;
+		}
+	}
+}
+/*
+ * Group List
+ */
+.list-group {
+	  padding-left: 0;
+	  margin-bottom: 1.250em;
+  
+  &>a, &>li{
+	  position: relative;
+	  display: block;
+	  padding: @padding-default-horizontal 0.938em;
+	  margin-bottom: -0.063em;
+  }
+}
+/*
+ * Radius
+ */
+.list-group-radius{
+	&>a:first-child, &>li:first-child{
+		border-top-left-radius: @padding-default-vertical;
+  		border-top-right-radius: @padding-default-vertical;
+	}
+	&>a:last-child, &>li:last-child{
+		margin-bottom: 0;
+		border-bottom-right-radius: @padding-default-vertical;
+		border-bottom-left-radius: @padding-default-vertical;
+	}
+}

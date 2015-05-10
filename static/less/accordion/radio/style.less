@@ -1,0 +1,52 @@
+// variables
+@accordion-default-color: #542437;
+@accordion-default-label-bg:#D95B43;
+@accordion-defaultul-li-label-hover-bg: #D24125;
+
+/*     mahsin    */
+.uy-accordion-default {
+	border:	1px solid @accordion-default-color;
+	.border-radius (0.250em);
+    background:	@white;
+    font-family:Arial, Helvetica, sans-serif; 
+    font-size:0.875em;
+    label {
+	    display:block;
+	    font-size:@font-size-base;
+	   line-height:@font-size-base;
+	    background:@accordion-default-label-bg;
+	    border:1px solid @accordion-default-color;
+	    color:@accordion-default-color;
+	    .text-shadow (1px 1px 1px rgba(255,255,255,0.3));
+	    font-weight:700;
+	    cursor:pointer;
+	    letter-spacing: 0.063em;
+	    text-transform:uppercase;
+	}
+	li label:hover,[type=radio]:checked ~ label{
+		 background:@accordion-defaultul-li-label-hover-bg;
+	    color:@white;
+	     .text-shadow (1px 1px 1px rgba(0,0,0,0.5));
+	}
+	.uy-content {
+	    padding:0 0.625em;
+	    overflow:hidden;
+	     border:1px solid @white;
+	  /*   border:1px solid #D24125; */
+	}
+	p {
+	    color:@gray-dark;
+	    line-height: 1.125em;
+	}
+	h3 {
+	    color:@accordion-default-color;
+	    padding:0;
+	    margin:0.625em 0;
+	}
+}
+ 
+
+
+[type=radio]:checked ~ .uy-content {
+    border:1px solid @accordion-defaultul-li-label-hover-bg;
+}

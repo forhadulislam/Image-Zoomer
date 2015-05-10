@@ -1,0 +1,92 @@
+    .mjs-nestedSortable-error {
+        background: #fbe3e4;
+        border-color: transparent;
+    }
+    .placeholder {
+        outline: 1px dashed #4183C4;
+    }
+    #tree {
+        width: 550px;
+        margin: 0;
+    }
+    ol{
+        padding-left: 0;
+    }
+
+    ol.sortable ol{
+        padding-left: 25px;
+    }
+
+
+    ol.sortable,ol.sortable ol {
+        list-style-type: none;
+    }
+
+    ol.sortable li{
+
+    }
+
+    ol.sortable li p{
+        padding: 0;
+        margin: 0;
+    }
+    ol li{
+        margin-bottom: 10px;
+        margin-top: 3px;
+    }
+
+    ol.sortable li div {
+        border: 1px solid #d4d4d4;
+        cursor: move;
+        margin: 0;
+        padding: 0.6em;
+        martin-top: 5px;
+        background: #eaeaea;
+    }
+
+    ol.sortable li div p:before {
+        content: '≡ ';
+        width: 100%;
+        text-align: center;
+        text-indent: 0;
+        color: #000;
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div {
+        border-color: #999;
+    }
+
+    .disclose, .expandEditor {
+        cursor: pointer;
+        width: 20px;
+        display: none;
+    }
+
+    .sortable li.mjs-nestedSortable-collapsed > ol {
+        display: none;
+    }
+
+    .sortable li.mjs-nestedSortable-branch > div > .disclose {
+        display: inline-block;
+    }
+
+    .sortable span.ui-icon {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menuDiv {
+        background: #EBEBEB;
+    }
+
+    .menuEdit {
+        background: #FFF;
+    }
+
+    .itemTitle {
+        vertical-align: middle;
+        cursor: pointer;
+    }

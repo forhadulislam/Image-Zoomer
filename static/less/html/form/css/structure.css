@@ -1,0 +1,152 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.uy-form fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.uy-form legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.uy-form label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+}
+.uy-form input[type="search"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.uy-form input[type="radio"],
+.uy-form input[type="checkbox"] {
+  margin: 4px 0 0;
+}
+.uy-form input[type="file"] {
+  display: block;
+}
+.uy-form input[type="range"] {
+  display: block;
+  width: 100%;
+  margin-left: 0px;
+}
+
+.uy-form output {
+  display: block;
+  padding-top: 7px;
+}
+.uy-form input[type="color"],
+.uy-form input[type="date"],
+.uy-form input[type="datetime"],
+.uy-form input[type="datetime-local"],
+.uy-form input[type="email"],
+.uy-form input[type="month"],
+.uy-form input[type="password"],
+.uy-form input[type="number"],
+.uy-form input[type="range"],
+.uy-form input[type="search"],
+.uy-form input[type="tel"],
+.uy-form input[type="text"],
+.uy-form input[type="time"],
+.uy-form input[type="url"],
+.uy-form input[type="week"],
+.uy-form textarea, .uy-form select{
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.uy-form input[type="range"]{
+  padding: 12px;
+}
+.uy-form textarea {
+  height: auto;
+  overflow: auto;
+}
+.uy-form input[type="search"] {
+  -webkit-appearance: none;
+}
+.uy-form div {
+  margin-bottom: 15px;
+}
+
+/*
+ * Inline Form
+ */
+@media (min-width: 768px) {
+  .uy-form-inline div{
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .uy-form-inline.uy-form input,
+  .uy-form-inline.uy-form textarea,
+  .uy-form-inline.uy-form select {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+  .uy-form-inline input[type="radio"],
+  .uy-form-inline input[type="checkbox"] {
+    position: relative;
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+/*
+ * Horizontal Form
+ */
+.uy-form-horizontal.uy-form input,
+.uy-form-horizontal.uy-form textarea,
+.uy-form-horizontal.uy-form select {
+  display: inline-block;
+  width: 80%;
+  vertical-align: middle;
+}
+.uy-form-horizontal label{
+  width: 18%;
+  margin-right: 1%;
+}
+.uy-form-horizontal input[type="radio"],
+.uy-form-horizontal input[type="checkbox"] {
+  width: auto;
+  margin-top: 0;
+}
+/*
+ * Radius
+ */
+.uy-form-radious input,
+.uy-form-radious select,
+.uy-form-radious textarea{
+	border-radius: 3px;
+}
+.uy-form-radious-2x input,
+.uy-form-radious-2x select,
+.uy-form-radious-2x textarea{
+	border-radius: 5px;
+}
+.uy-form-radious-3x input,
+.uy-form-radious-3x select,
+.uy-form-radious-3x textarea{
+	border-radius: 10px;
+}
+.uy-form-radious-round input,
+.uy-form-radious-round select,
+.uy-form-radious-round textarea{
+	border-radius: 1000px;
+}

@@ -1,0 +1,41 @@
+// mixins
+
+.common-fix-style{
+  width:100%;
+  right:0;
+  left:0;
+  z-index:100;
+}
+
+.fixed(header){
+  .common-fix-style;
+  top:0;
+}
+
+.fixed(sidebar){
+  z-index:101;
+}
+
+.fixed(footer){
+  .common-fix-style;
+  bottom:0;
+}
+
+.fixed(@_){
+  position:fixed;
+}
+
+// main less
+
+.uy-header-fixed {
+  .fixed(header);
+}
+
+.uy-sidebar-fixed{
+  .fixed(sidebar);
+}
+
+.uy-footer-fixed {
+  .fixed(footer);
+}
+

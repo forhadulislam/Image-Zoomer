@@ -1,0 +1,431 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+textarea {
+  overflow: auto;
+}
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: inherit;
+  color: #333;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+input[type="search"] {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  line-height: normal;
+}
+input[type="file"] {
+  display: block;
+}
+input[type="range"] {
+  display: block;
+  width: 100%;
+}
+select[multiple],
+select[size] {
+  height: auto;
+}
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+output {
+  display: block;
+  padding-top: 7px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+}
+.uy-form-control {
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.uy-form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+.uy-form-control::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+.uy-form-control:-ms-input-placeholder {
+  color: #999;
+}
+.uy-form-control::-webkit-input-placeholder {
+  color: #999;
+}
+.uy-form-control[disabled],
+.uy-form-control[readonly],
+fieldset[disabled] .uy-form-control {
+  cursor: not-allowed;
+  background-color: #eee;
+  opacity: 1;
+}
+textarea.uy-form-control {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: none;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type="date"],
+  input[type="time"],
+  input[type="datetime-local"],
+  input[type="month"] {
+    line-height: 34px;
+  }
+  input[type="date"].input-sm,
+  input[type="time"].input-sm,
+  input[type="datetime-local"].input-sm,
+  input[type="month"].input-sm {
+    line-height: 30px;
+  }
+  input[type="date"].input-lg,
+  input[type="time"].input-lg,
+  input[type="datetime-local"].input-lg,
+  input[type="month"].input-lg {
+    line-height: 46px;
+  }
+}
+.uy-form {
+  margin-bottom: 15px;
+}
+.radio,
+.checkbox {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.radio label,
+.checkbox label {
+  min-height: 20px;
+  padding-left: 20px;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  position: absolute;
+  margin-top: 4px \9;
+  margin-left: -20px;
+}
+.radio + .radio,
+.checkbox + .checkbox {
+  margin-top: -5px;
+}
+.radio-inline,
+.checkbox-inline {
+  display: inline-block;
+  padding-left: 20px;
+  margin-bottom: 0;
+  font-weight: normal;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.radio-inline + .radio-inline,
+.checkbox-inline + .checkbox-inline {
+  margin-top: 0;
+  margin-left: 10px;
+}
+input[type="radio"][disabled],
+input[type="checkbox"][disabled],
+input[type="radio"].disabled,
+input[type="checkbox"].disabled,
+fieldset[disabled] input[type="radio"],
+fieldset[disabled] input[type="checkbox"] {
+  cursor: not-allowed;
+}
+.radio-inline.disabled,
+.checkbox-inline.disabled,
+fieldset[disabled] .radio-inline,
+fieldset[disabled] .checkbox-inline {
+  cursor: not-allowed;
+}
+.radio.disabled label,
+.checkbox.disabled label,
+fieldset[disabled] .radio label,
+fieldset[disabled] .checkbox label {
+  cursor: not-allowed;
+}
+.uy-form-control-static {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-bottom: 0;
+}
+.uy-form-control-static.input-lg,
+.uy-form-control-static.input-sm {
+  padding-right: 0;
+  padding-left: 0;
+}
+.input-sm,
+.uy-form-sm .uy-form-control {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+select.input-sm,
+select.uy-form-sm .uy-form-control {
+  height: 30px;
+  line-height: 30px;
+}
+textarea.input-sm,
+textarea.uy-form-sm .uy-form-control,
+select[multiple].input-sm,
+select[multiple].uy-form-sm .uy-form-control {
+  height: auto;
+}
+.uy-feedback {
+  position: relative;
+}
+.uy-feedback .uy-form-control {
+  padding-right: 42.5px;
+}
+.uy-form-control-feedback {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  pointer-events: none;
+}
+.input-lg + .uy-form-control-feedback {
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+}
+.input-sm + .uy-form-control-feedback {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+.uy-success-form .help-block,
+.uy-success-form .control-label,
+.uy-success-form .radio,
+.uy-success-form .checkbox,
+.uy-success-form .radio-inline,
+.uy-success-form .checkbox-inline,
+.uy-success-form.radio label,
+.uy-success-form.checkbox label,
+.uy-success-form.radio-inline label,
+.uy-success-form.checkbox-inline label {
+  color: #3c763d;
+}
+.uy-success-form .uy-form-control {
+  border-color: #3c763d;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+.uy-success-form .uy-form-control:focus {
+  border-color: #2b542c;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
+}
+.uy-success-form .input-group-addon {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #3c763d;
+}
+.uy-success-form .uy-form-control-feedback {
+  color: #3c763d;
+}
+.uy-warning-form .help-block,
+.uy-warning-form .control-label,
+.uy-warning-form .radio,
+.uy-warning-form .checkbox,
+.uy-warning-form .radio-inline,
+.uy-warning-form .checkbox-inline,
+.uy-warning-form.radio label,
+.uy-warning-form.checkbox label,
+.uy-warning-form.radio-inline label,
+.uy-warning-form.checkbox-inline label {
+  color: #8a6d3b;
+}
+.uy-warning-form .uy-form-control {
+  border-color: #8a6d3b;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+.uy-warning-form .uy-form-control:focus {
+  border-color: #66512c;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #c0a16b;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #c0a16b;
+}
+.uy-warning-form .input-group-addon {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #8a6d3b;
+}
+.uy-warning-form .uy-form-control-feedback {
+  color: #8a6d3b;
+}
+.uy-error-form .help-block,
+.uy-error-form .control-label,
+.uy-error-form .radio,
+.uy-error-form .checkbox,
+.uy-error-form .radio-inline,
+.uy-error-form .checkbox-inline,
+.uy-error-form.radio label,
+.uy-error-form.checkbox label,
+.uy-error-form.radio-inline label,
+.uy-error-form.checkbox-inline label {
+  color: #a94442;
+}
+.uy-error-form .uy-form-control {
+  border-color: #a94442;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+.uy-error-form .uy-form-control:focus {
+  border-color: #843534;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+}
+.uy-error-form .input-group-addon {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #a94442;
+}
+.uy-error-form .uy-form-control-feedback {
+  color: #a94442;
+}
+.uy-feedback label ~ .uy-form-control-feedback {
+  top: 25px;
+}
+.uy-feedback label.sr-only ~ .uy-form-control-feedback {
+  top: 0;
+}
+.help-block {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #737373;
+}
+@media (min-width: 768px) {
+  .uy-inline-form .uy-form {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .uy-inline-form .uy-form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+  .uy-inline-form .uy-form-control-static {
+    display: inline-block;
+  }
+  .uy-inline-form .input-group {
+    display: inline-table;
+    vertical-align: middle;
+  }
+  .uy-inline-form .input-group .input-group-addon,
+  .uy-inline-form .input-group .input-group-btn,
+  .uy-inline-form .input-group .uy-form-control {
+    width: auto;
+  }
+  .uy-inline-form .input-group > .uy-form-control {
+    width: 100%;
+  }
+  .uy-inline-form .control-label {
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .uy-inline-form .radio,
+  .uy-inline-form .checkbox {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .uy-inline-form .radio label,
+  .uy-inline-form .checkbox label {
+    padding-left: 0;
+  }
+  .uy-inline-form .radio input[type="radio"],
+  .uy-inline-form .checkbox input[type="checkbox"] {
+    position: relative;
+    margin-left: 0;
+  }
+  .uy-inline-form .uy-feedback .uy-form-control-feedback {
+    top: 0;
+  }
+}
+.uy-horizontal-form .radio,
+.uy-horizontal-form .checkbox,
+.uy-horizontal-form .radio-inline,
+.uy-horizontal-form .checkbox-inline {
+  padding-top: 7px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.uy-horizontal-form .radio,
+.uy-horizontal-form .checkbox {
+  min-height: 27px;
+}
+.uy-horizontal-form .uy-form {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.uy-horizontal-form .uy-feedback .uy-form-control-feedback {
+  right: 15px;
+}

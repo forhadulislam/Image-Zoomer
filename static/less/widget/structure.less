@@ -1,0 +1,24 @@
+// mixins
+
+.uy-widget-padding(@top-bottom,@right,@left){
+  padding:@top-bottom @right @top-bottom @left;
+}
+
+// main less
+
+.uy-widget{
+  height: auto;
+  width: 100%;
+}
+
+.uy-widget-header {
+  .uy-widget-padding (1em,0,1.30em);
+}
+
+.uy-widget-body{
+  .uy-widget-padding (1.25em,0,0.625em);
+}
+
+.uy-widget-footer{
+  .uy-widget-padding (0.625em,0,0.625em);
+}

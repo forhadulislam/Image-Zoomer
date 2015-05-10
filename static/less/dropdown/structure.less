@@ -1,0 +1,21 @@
+.uy-dropdown{
+  display: none;
+  &:target{
+    display:block;
+  }
+}
+
+ul.uy-dropdown{
+  list-style: none;
+}
+
+#uy-checkbox{
+  .opacity(0);
+  &:checked + .uy-dropdown{
+    display: block;
+  }
+}
+
+.uy-caret {
+    .caret;
+}

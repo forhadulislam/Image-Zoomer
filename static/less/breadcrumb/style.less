@@ -1,0 +1,32 @@
+.bread-body-default{
+    background:#d9d9d8;
+    margin: 1em 0 2em;
+}
+
+.breadcrumb-default {
+    color: @gray-perfect;
+    font-size: 1.125em;
+    list-style: none;
+
+    a{
+        color: @gray-perfect;
+        text-decoration: none;
+    }
+
+    a:hover, a:focus{
+        color: darken(@gray-perfect, 20%);
+    }
+
+    &  > li + li + li:before {
+        color: @gray-perfect;
+        content: "\00BB ";
+    }
+
+    & > li:last-of-type, & > li:last-of-type a{
+        color: #3e619c;
+        text-decoration:none;
+        pointer-events: none;
+    }
+
+}
+

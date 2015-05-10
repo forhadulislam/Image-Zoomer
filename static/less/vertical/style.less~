@@ -1,0 +1,57 @@
+/*
+*   Variable declaration
+*/
+
+@nav-vertical-font: Verdana, Geneva, Arial, Helvetica, sans-serif;
+@nav-vertical-ul-bg-color: #373737;
+@nav-vertical-ul-li-color: #fff;
+@nav-vertical-ul-li-hover-active-bg-color: #aaa;
+
+@nav-li-transition: background-color 0.5s ease;
+@nav-li-hover-transition: background-color 0.7s ease;
+
+.uy-nav-vertical{
+    
+    ul {
+        background-color: @nav-vertical-ul-bg-color;
+        list-style:none;
+        text-align: center;
+        font-family: @nav-vertical-font;
+        font-size: 1em;
+        
+        li {
+           color: @nav-vertical-ul-li-color;
+           font-weight: 700;
+            a {
+                font-weight: bold;
+                text-decoration: none;
+                color: inherit;
+            }
+
+            span {
+                line-height: 1.938em;
+            }
+            
+            p {
+                padding: 0;
+                margin: 0;
+            }
+            
+        }        
+    }   
+    
+    li {
+        .transition (@nav-li-transition);
+        
+        &:hover, &:active {
+            background-color: @nav-vertical-ul-li-hover-active-bg-color;
+        }
+        
+        &:hover ul {
+            .transition (@nav-li-hover-transition);
+        }        
+    }   
+    
+}
+
+

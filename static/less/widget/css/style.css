@@ -1,0 +1,21 @@
+.uy-widget-default{
+	background:#f4f4f4;
+}
+
+.uy-widget-default .uy-widget-header{
+	background:#ea6153;
+	border-top: 5px solid #c63e30;
+    color: #fff;
+    font-size: 21px;
+    letter-spacing: 0.25px;
+    border-top: 5px solid #c63e30;
+    color: #fff;
+    font-size: 21px;
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+}
+
+.uy-widget-default .uy-widget-footer{
+	background: #e9eaed;
+	text-transform: capitalize;
+}
